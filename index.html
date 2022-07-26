@@ -4,7 +4,11 @@
     </head>
     <body>
         <h1>מחשבון שכר למורים</h1>
-        <form onsubmit="calculate()">
+        <form onsubmit="return calculate()">
+            <p><input name="זמן התחלה" type="date" required id="start"/>זמן התחלה</p>
+            <p><input name="זמן סיום" type="date" required id="end"/>זמן סיום</p>
+            <p><input name="בהסכם עוז לתמורה" type="checkbox" id="oz_letmora"/>האם את/ה בהסכם עוז לתמורה?</p>
+            <p><input name="מנהל" type="checkbox" id="principal"/>האם את/ה מנהל/ת?</p>
             <input name="חשב" type="submit" />
         </form>
     </body>
